@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AmryLil</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg-gray-950  font-inter text-slate-200">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const image=document.querySelector('#image')
+                const nama=document.getElementById('nama')
+                window.addEventListener('load',function(){
+                    image.classList.add(
+                        'lg:translate-x-[22rem]',
+                        'lg:opacity-100',
+                        'xl:translate-x-[25rem]',
+                        'scale-100',
+                        'opacity-100'
+                    )
+                    nama.classList.add(
+                        'lg:-translate-x-48',
+                        'transition',
+                        'duration-1000',
+                        'lg:opacity-100',
+                        'xl:-translate-x-64',
+                    )
+                });
+
+            });
+
+            // const sosmed=document.querySelector('#nama #sosmed')
+            // function screen(){
+            //     if (window.innerWidth<=500){
+            //         sosmed.classList.add('hidden')
+            //     }
+            // }
+
+            // window.addEventListener('load',screen())
+            // window.addEventListener('resize',screen())
+
+        </script>
+        <header class="flex justify-between h-13 shadow-sm fixed w-full backdrop-blur">
+                <div class="p-3 text-xl bold font-bold pl-10 hover:scale-125 transition-all duration-500 group cursor-default">
+                    <span class="group-hover:text-red-600 group-hover:transition-colors duration-500">Amry</span><span class="text-red-600 group-hover:text-slate-200 group-hover:transition-colors duration-500">Lil_</span>
+                </div>
+                <div class="hidden w-96 lg:block xl:block mt-3">
+                    <ul class=" flex py-1 items-center ">
+                        <li id="home" class=" px-3 hover:text-red-500 hover:border-b-2 hover:border-red-500 transition duration-300"> <a href="web.html">Home</a></li>
+                        <li class="px-3 hover:text-red-500 hover:border-b-2 hover:border-red-500 transition duration-300"> <a href="about.html">About</a></li>
+                        <li class="px-3 hover:text-red-500 hover:border-b-2 hover:border-red-500 transition duration-300"> <a href="#">Portofolio</a></li>
+                        <li class="px-3 hover:text-red-500 hover:border-b-2 hover:border-red-500 transition duration-300"> <a href="#">Contact</a></li>
+                    </ul>
+                </div>
+        </header>
+               
+        <main class="w-full h-screen flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:pt-12 py-10">
+
+                <img id="image" src="img/1.jpg" alt="img" class="lg:opacity-0 w-72 h-72 lg:rounded-full rounded-full bg-cover object-cover shadow-[0_5px_90px_-15px_rgba(0,0,0,0.2)] shadow-red-700 border-2 lg:border-4 border-red-600 lg:w-[23rem] lg:h-[23rem] lg:-ml-32 transition duration-1000 mt-10 xl:w-96 xl:h-96">
+
+                <div id="nama" class="flex flex-col justify-center items-center lg:items-start mt-10 lg:mt-5 lg:opacity-0 tracking-wide">
+                    <span class="text-xs pl-3 pb-2 lg:text-sm">Hello Everyone, <b class="text-red-500">i'm</b></span>
+                    <strong class="font-extrabold text-4xl pl-3 lg:text-6xl text-red-500 tracking-wide">Ulil Amry AQ</strong>
+                    <span class="text-xl pl-3 py-2 lg:text-xl font-medium"> Full-Stack Engineering<span class="font-light text-xs text-red-500">(beginner)</span></span>
+                    <span class="text-sm pl-3 py-2 lg:text-sm"> Welcome to My Personal Website</span>
+                    <div id="sosmed" class=" mt-1 ml-3 hidden lg:block">
+                        <div class="flex items-center mb-2">
+                            <div class="h-0.5 w-14 rounded-3xl bg-slate-200 flex justify-center items-center lg:w-8"></div>
+                            <strong class="mx-1">Social Media</strong>
+                            <div class="h-0.5 w-14 rounded-3xl bg-slate-200 flex justify-center items-center lg:w-35 shadow-sm shadow-red-700"></div>
+                        </div>
+                        <div class="text-xl lg:text-2xl flex justify-center items-center lg:justify-start">
+                            <a href="#" class="cursor-pointer pr-2 fab fa-facebook text-blue-500 hover:text-blue-600 active:text-blue-700"></a href="#">
+                            <a href="#" class="cursor-pointer pr-2 fab fa-twitter text-blue-400 hover:text-blue-500 active:text-blue-600"></a href="#">
+                            <a href="#" class="cursor-pointer pr-2 fab fa-instagram text-pink-500 hover:text-pink-600 active:text-pink-700"></a href="#">
+                            <a href="#" class="cursor-pointer pr-2 fab fa-github  hover:text-slate-300 active:text-slate-400"></a href="#">
+                        </div>
+                    </div>
+                </div>                   
+        </main>
+
+        <div class="fixed w-full bottom-0 lg:hidden xl:hidden flex justify-center items-center bg-gray-950 backdrop-blur backdrop-filter shadow-md shadow-red-600 py-3">
+            <ul class=" flex py-1 items-center">
+                <li id="home" class=" px-3 hover:text-red-500 hover:border-b-2 hover:border-red-500 transition duration-300"> <a href="web.html">Home<a></li>
+                <li class="px-3 hover:text-red-500 hover:border-b-2 hover:border-red-500 transition duration-300"> <a href="#">About</a></li>
+                <li class="px-3 hover:text-red-500 hover:border-b-2 hover:border-red-500 transition duration-300"> <a href="#">Portofolio</a></li>
+                <li class="px-3 hover:text-red-500 hover:border-b-2 hover:border-red-500 transition duration-300"> <a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
